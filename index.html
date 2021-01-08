@@ -1,9 +1,75 @@
 <!DOCTYPE>
 <html>
 	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="">
 		<title>ZeusChops</title>
+
+		<!-- Bulma CSS -->
+		<link href="bulma.css" rel="stylesheet">
+
+		<!-- Custom scripts/styles -->
+		<link href="index.css" rel="stylesheet">
+
 	</head>
 	<body>
-		<p>Hello World!</p>
+		<nav class="navbar" role="navigation" aria-label="main navigation">
+			<div class="container">
+				<div class="navbar-brand">
+					<a class="navbar-item" href="https://zeuschops.com">ZeusChops</a>
+					<a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+						<span aria-hidden="true"></span>
+						<span aria-hidden="true"></span>
+						<span aria-hidden="true"></span>
+					</a>
+				</div>
+			
+				<div id="navbarBasicExample" class="navbar-menu">
+					<div class="navbar-start">
+					</div>
+					<div class="navbar-end">
+						<a class="navbar-item">Home</a>
+						<!-- <a class="navbar-item" href="projects.html">Projects</a> -->
+						<a class="navbar-item" href="https://github.com/zeuschops">GitHub</a>
+						<a class="navbar-item" href="https://www.linkedin.com/in/austin-bennett-857542200/">LinkedIn</a>
+						<a class="navbar-item" href="https://www.twitter.com/zeuschops">Twitter</a>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<section class="hero is-white has-text-centered">
+			<div class="hero-body">
+				<div class="container">
+					<div class="columns is-centered">
+						<div class="column">
+							<h1 class="title is-spaced is-size-1-desktop is-size-2-tablet is-size-3-mobile">Computer Scientist, Backend Developer, and Graduate</h1>
+							<h2 class="subtitle is-size-4-desktop">I develop efficient and effective backend code.</h2>
+							<div class="spacer"></div>
+							<img class="avatar" src="images/profile.png">
+							<div class="spacer"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="lower-third">
+				<div class="container">
+					<div class="columns is-centered">
+						<div class="column">
+							<h3 class="subtitle is-size-3-desktop" style="color:white;"><a href="https://github.com/zeuschops/knockknock/">KnockKnock</a></h3>
+							<p>KnockKnock is an application designed for mobile Apple devices that connects over TCP to open and close a garage door.</p>
+						</div>
+						<div class="column">
+							<h3 class="subtitle is-size-3-desktop" style="color:white;"><a href="https://github.com/zeuschops/SocketManager/">SocketManager</a></h3>
+							<p>SocketManager is a device-agnostic Java library that's focused on simplifying TCP and UDP interactions. This library is designed for use with other applications and prototyping.</p>
+						</div>
+						<div class="column">
+							<h3 class="subtitle is-size-3-desktop" style="color:white;"><a href="https://github.com/zeuschops/zeuschops.github.io">zeuschops.github.io</a></h3>
+							<p>That's this site! This site that you are on currently is intended to primarily be a portfolio-like website that I can update through GitHub. Feel free to take a look at the <a href="https://www.github.com/zeuschops/zeuschops.github.io" style="text-decoration:underline;">source code</a>.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 	</body>
 </html>
