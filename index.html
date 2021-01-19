@@ -11,7 +11,6 @@
 
 		<!-- Custom scripts/styles -->
 		<link href="index.css" rel="stylesheet">
-
 	</head>
 	<body>
 		<nav class="navbar" role="navigation" aria-label="main navigation">
@@ -54,7 +53,7 @@
 						<div class="column">
 							<h1 class="title is-spaced is-size-1-desktop is-size-2-tablet is-size-3-mobile">Computer Scientist, Backend Developer, and Graduate</h1>
 							<h2 class="subtitle is-size-4-desktop">I develop efficient and effective backend code.</h2>
-							<div class="spacer"></div>
+							<div id="spacer" class="spacer"></div>
 							<img class="avatar" src="images/profile.png">
 							<div class="spacer"></div>
 						</div>
@@ -65,26 +64,28 @@
 				<div class="container">
 					<div class="columns is-centered">
 						<div class="column">
-							<h3 class="subtitle is-size-3-desktop" style="color:white;"><a href="https://github.com/zeuschops/knockknock/">KnockKnock</a></h3>
-							<p>KnockKnock is an application designed for mobile Apple devices that connects over TCP to open and close a garage door.</p>
+							<h3 class="lower-third-link"><a class="lower-third-link" href="https://github.com/zeuschops/knockknock/">KnockKnock</a></h3>
+							<p>KnockKnock is an application designed for Apple mobile devices that connects over TCP to open and close a garage door.</p>
 						</div>
 						<div class="column">
-							<h3 class="subtitle is-size-3-desktop" style="color:white;"><a href="https://github.com/zeuschops/SocketManager/">SocketManager</a></h3>
-							<p>SocketManager is a device-agnostic Java library that's focused on simplifying TCP and UDP interactions. This library is designed for use with other applications and prototyping.</p>
+							<h3 class="lower-third-link"><a class="lower-third-link" href="https://github.com/zeuschops/SocketManager/">SocketManager</a></h3>
+							<p>SocketManager is a Java library that is focused on simplifying TCP and UDP interactions. This library is designed for use with small applications.</p>
 						</div>
 						<div class="column">
-							<h3 class="subtitle is-size-3-desktop" style="color:white;"><a href="https://github.com/zeuschops/zeuschops.github.io">zeuschops.github.io</a></h3>
-							<p>That's this site! This site that you are on currently is intended to primarily be a portfolio-like website that I can update through GitHub. Feel free to take a look at the <a href="https://www.github.com/zeuschops/zeuschops.github.io" style="text-decoration:underline;">source code</a>.</p>
+							<h3 class="lower-third-link"><a class="lower-third-link" href="https://github.com/zeuschops/zeuschops.github.io">zeuschops.github.io</a></h3>
+							<p>That's this site! This site that you are on currently is intended to primarily be a portfolio-like website that I can update through GitHub. Feel free to take a look at the <a class="lower-third-link" href="https://www.github.com/zeuschops/zeuschops.github.io">source code</a>.</p>
 						</div>
 					</div>
 				</div>
 			</div>
 			<script>
 				var lowerThird = document.getElementById('lowerthree');
+				var spacer = document.getElementById('spacer');
 				var userAgent = navigator.userAgent.toLowerCase();
-
+	
 				if(userAgent.search("iphone") > -1 || userAgent.search("ipad") > -1 || userAgent.search("android") > -1) {
 					lowerThird.innerHTML = "<div class=\"mobile-tag\"><a href=\"https://github.com/zeuschops/\">Check out my projects on GitHub!</a></div>";
+					spacer.style.paddingTop = "0.5em";
 				}
 			</script>
 		</section>

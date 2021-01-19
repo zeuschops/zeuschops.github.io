@@ -54,9 +54,24 @@
 .lower-third {
   background-color:black;
   color:white;
-  bottom:0em;
+  bottom:0.75em;
   position: absolute;
   width: 100%;
+  padding-top:1em;
+  padding-bottom:1em;
+}
+
+h3.lower-third-link {
+  font-size:1.5em;
+}
+
+a.lower-third-link {
+  color:white;
+  text-decoration: none;
+}
+
+a.lower-third-link:hover {
+  text-decoration: underline;
 }
 
 .section-two {
