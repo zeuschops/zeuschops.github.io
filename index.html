@@ -18,14 +18,23 @@
 			<div class="container">
 				<div class="navbar-brand">
 					<a class="navbar-item" href="https://zeuschops.com">ZeusChops</a>
-					<a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+					<div id="burger" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="nav-menu" onclick="toggleDropdown()">
 						<span aria-hidden="true"></span>
 						<span aria-hidden="true"></span>
 						<span aria-hidden="true"></span>
-					</a>
+					</div>
 				</div>
-			
-				<div id="navbarBasicExample" class="navbar-menu">
+				<div id="myDropdown" class="dropdown-content">
+					<a href="https://github.com/zeuschops">GitHub</a>
+					<a href="https://linkedin.com/in/austin-bennett-857542200/">LinkedIn</a>
+					<a href="https://twitter.com/zeuschops">Twitter</a>
+				</div>
+				<script>
+					function toggleDropdown() {
+						document.getElementById('myDropdown').classList.toggle("show");
+					}
+				</script>
+				<div class="navbar-menu">
 					<div class="navbar-start">
 					</div>
 					<div class="navbar-end">
@@ -52,7 +61,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="lower-third">
+			<div class="lower-third" id="lowerthree">
 				<div class="container">
 					<div class="columns is-centered">
 						<div class="column">
@@ -70,6 +79,14 @@
 					</div>
 				</div>
 			</div>
+			<script>
+				var lowerThird = document.getElementById('lowerthree');
+				var userAgent = navigator.userAgent.toLowerCase();
+
+				if(userAgent.search("iphone") > -1 || userAgent.search("ipad") > -1 || userAgent.search("android") > -1) {
+					lowerThird.innerHTML = "<div class=\"mobile-tag\"><a href=\"https://github.com/zeuschops/\">Check out my projects on GitHub!</a></div>";
+				}
+			</script>
 		</section>
 	</body>
 </html>

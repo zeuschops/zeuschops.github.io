@@ -1,3 +1,29 @@
+.dropdown-content {
+  display: none;
+  position:absolute;
+  background-color:white;
+  width: 100%;
+  overflow:auto;
+}
+
+.dropdown-content a {
+  text-align:center;
+  margin-top:1em;
+  margin-bottom:1em;
+  font-size: 1.2em;
+  color:black;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  text-decoration: underline;
+}
+
+.show {
+  display:block;
+}
+
 .arrow {
   border: solid black;
   border-width: 0 4px 4px 0;
@@ -28,8 +54,9 @@
 .lower-third {
   background-color:black;
   color:white;
-  padding-top:2em;
-  padding-bottom:2em;
+  bottom:0em;
+  position: absolute;
+  width: 100%;
 }
 
 .section-two {
@@ -48,4 +75,26 @@
 .spacer {
   padding-top:1em;
   padding-bottom:1em;
+}
+
+
+.mobile-tag {
+  bottom:0em;
+  position:absolute;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  text-align:center;
+  background-color: black;
+  color: white;
+  width: 100%;
+  font-size:1.5em;
+}
+
+div.mobile-tag a {
+  text-decoration:none;
+  color:white;
+}
+
+div.mobile-tag a:hover {
+  text-decoration: underline;
 }
